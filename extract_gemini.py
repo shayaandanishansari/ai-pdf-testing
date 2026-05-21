@@ -27,7 +27,10 @@ response = httpx.post(
     timeout=120.0
 )
 
-text = response.json()["candidates"][0]["content"]["parts"][0]["text"]
+data = response.json()
+if "candidates" not in data:
+    raise RuntimeError(data)
+text = data["candidates"][0]["content"]["parts"][0]["text"]
 
 with open("arabic-book-sample-gemini.txt", "w", encoding="utf-8") as f:
     f.write(text)
