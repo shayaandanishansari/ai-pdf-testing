@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "WebSearch",
-      "WebFetch(domain:www.alibabacloud.com)"
+      "WebFetch(domain:www.alibabacloud.com)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Drives\\\\F\\\\Work\\\\Learning\\\\LearningPDFs\" -File)",
+      "Bash(Select-Object Name, FullName)"
     ]
   }
 }
