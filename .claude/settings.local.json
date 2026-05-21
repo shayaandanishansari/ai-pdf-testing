@@ -4,7 +4,8 @@
       "WebSearch",
       "WebFetch(domain:www.alibabacloud.com)",
       "Bash(Get-ChildItem -Path \"C:\\\\Drives\\\\F\\\\Work\\\\Learning\\\\LearningPDFs\" -File)",
-      "Bash(Select-Object Name, FullName)"
+      "Bash(Select-Object Name, FullName)",
+      "Bash(python extract_pymupdf_coords.py)"
     ]
   }
 }
